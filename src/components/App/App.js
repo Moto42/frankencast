@@ -12,15 +12,16 @@ function App() {
 
       <main>
         <Switch>
+        <Route path="/about">
+            <div>
+              {/* TODO: Page_About Component */}
+              <p>About Page</p>
+            </div>
+            </Route>
           <Route path='/'>
-            {/* TODO Mainpage Component */}
+            {/* TODO Page_Main Component */}
             <div>
               <p>This is the index page</p>
-            </div>
-          </Route>
-          <Route path="/about">
-            <div>
-              <p>About Page</p>
             </div>
           </Route>
         </Switch>
