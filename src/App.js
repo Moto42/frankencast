@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// TODO: new logos in /public/logo###.png
+
 function App() {
   return (
     <div className="App">
