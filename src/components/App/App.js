@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Header from '../Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // TODO: new logos in /public/logo###.png
@@ -8,8 +9,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      {/* TODO: Header component */}
-
+      <Header />
       <main>
         <Switch>
         <Route path="/about">
