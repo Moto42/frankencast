@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from '../Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {default as MainPage} from '../Pages_MainPage';
 
 // TODO: new logos in /public/logo###.png
 
@@ -19,10 +20,7 @@ function App() {
             </div>
             </Route>
           <Route path='/'>
-            {/* TODO Page_Main Component */}
-            <div>
-              <p>This is the index page</p>
-            </div>
+            <MainPage/>
           </Route>
         </Switch>
       </main>

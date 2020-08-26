@@ -1,0 +1,26 @@
+.FeedOverview {
+  display: grid;
+  grid-template-areas:
+    'image title links'
+    'image desc  desc';
+}
+.FeedOverview__image {
+  grid-area: image;
+  width: 2in%;
+  max-height: 1.5in;
+}
+.FeedOverview__title {
+  grid-area: title;
+}
+.FeedOverview__description {
+  grid-area: desc;
+}
+.FeedOverview__links {
+  grid-area: links;
+}
+.FeedOverview__details_link {
+}
+.FeedOverview__edit_link {
+}
+.FeedOverview__subscribe {
+}
