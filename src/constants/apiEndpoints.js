@@ -2,7 +2,7 @@
 *   Don't hardcode the URLs into the code, use these functions.
 */
 //The root address of the server the API is running on.
-export const baseURL = 'https://m42-custompodcast.glitch.me';
+export const baseURL = process.env.API_BASE_URL || 'https://m42-custompodcast.glitch.me';
 
 /** returns a JSON object representing a podcast feed in the database
 *  Leaving the feedID blank will return a list of all the feedIDs in the database
