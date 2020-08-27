@@ -20,6 +20,8 @@
 }
 .Pages_DisplayFeed__image {
   grid-area: image;
+  width: 225px;
+  max-width: 25vw;
 }
 .Pages_DisplayFeed__EpisodeList {
   grid-area: episodes;
