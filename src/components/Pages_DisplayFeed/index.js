@@ -1,4 +1,10 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import useFetchJson from 'hooks/useFetchJson';
+import {dataEndpoint} from 'constants/apiEndpoints';
+import EpisodeList from 'components/EpisodeList';
+
+// TODO: Handle 404 errors.
 
 /** Give the full information about the podcast for a given feedID
  *
@@ -11,9 +17,37 @@ import React from 'react';
  * @returns     {ReactElement}
  */
 function Pages_DisplayFeed(props) {
-  return(
-    <p>Pages_DisplayFeed</p>
+  const { feedID } = useParams();
+  const [feedData] = useFetchJson(
+    dataEndpoint(feedID),
+    {
+      title:       `Loading information for ${feedID}`,
+      description: '',
+      link:        '',
+      imgUrl:      '',
+      items:       [],
+      doners:      [],
+    }
   );
+  if(feedID === undefined) return (
+    <div className="Pages_DisplayFeed">
+    <p>No feedID given.</p>
+    </div>
+  );
+
+  const {
+    title,
+    description,
+    imgUrl,
+    link,
+    doners,
+    items,
+  } = feedData;
+
+  return(<div className="Pages_DisplayFeed">
+
+    <EpisodeList className="Pages_DisplayFeed__EpisodeList" episodes={items} />
+  </div>);
 }
 
 export default Pages_DisplayFeed;
