@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from '../Header';
+import Header from 'components/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import {default as MainPage} from '../Pages_MainPage';
+import {default as MainPage} from 'components/Pages_MainPage';
+import Footer from 'components/Footer';
 
 // TODO: new logos in /public/logo###.png
+/** Entry point for the app.
+*  Lays out the highest level structure of the page.
+*  Also handles the routing for various URLs via the Router/Switch/Route
+*
+* @return {ReactElement}
+* @constructor
+*/
 
 function App() {
   return (
@@ -24,8 +32,7 @@ function App() {
           </Route>
         </Switch>
       </main>
-
-      {/* TODO: Footer component */}
+      <Footer />
       </div>
     </Router>
   );

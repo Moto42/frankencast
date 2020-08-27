@@ -2,9 +2,9 @@ import React from 'react';
 import Nav from './subcomponents/Nav';
 
 function Header(props) {
-  return(<div>
+  return(<header>
       <Nav></Nav>
-  </div>);
+  </header>);
 }
 
 export default Header;
