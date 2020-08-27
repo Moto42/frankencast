@@ -1,0 +1,34 @@
+_id: "5e9a548a7c213e39c43cb73f"
+​
+description: "A group of talented criminals are brought together by a mysterious and well-financed patron. The patron wants them to steal certain objects from certain places. The first is an ancient and valuable artifact from the safe of an art gallery. It is guarded by alarms and other conventional security, but the team is not told of its ultimate protection…the undead. Is fighting a blood sucking monster worth a sizeable payday?"
+​
+doners: Array [ "https://feeds.podcastmirror.com/rppr_actual_play_test", "https://media.rss.com/aifilaw-theshadowoverinnsmouth/feed.xml" ]
+​
+feedID: "test1"
+​
+imgUrl: "https://i2.wp.com/actualplay.roleplayingpublicradio.com/wp-content/uploads/nba1.png?resize=233%2C300&ssl=1"
+​
+items: Array (6) […]
+  ​​
+  0: Object {
+    title: "The White Vault 30",
+    url: "http://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/whitevault/White_Vault_S3.10A.mp3",
+    description: "There is no denying yada yada yada"
+  }
+  ​​
+  1: Object { title: "Assembly", url: "http://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/whitevault/White_Vault_S3.10A.mp3", description: "Stuff and things!!!" }
+  ​​
+  2: Object { title: "The Fyre Fraud with Yassir Lester", description: "Description: What's poppin, con-gregaton? The wait is over. This week Yassir Lester drops by the pod to dissect- you guessed it- the Fyre Festival. Yassir and Laci break down false promises, class action lawsuits, and, of course, that infamous \"take one for the team\" incident. Plus a bonus music industry scam. Stay schemin! ", url: "https://omny.fm/shows/scam-goddess/the-fyre-fraud-with-yassir-lester", … }
+  ​​
+  3: Object { title: "Part 1", description: "A group of talented criminals are brought together by a mysterious and well-financed patron. The patron wants them to steal certain objects from certain places. The first is an ancient and valuable artifact from the safe of an art gallery. It is guarded by alarms and other conventional security, but the team is not told of its ultimate protection…the undead. Is fighting a blood sucking monster worth a sizeable payday?", url: "http://media.blubrry.com/rpg_actual_play/s/actualplay.roleplayingpublicradio.com/podcasts/RPPR-NBA-Thieves-Code-01.mp3", … }
+  ​​
+  4: Object { title: "Part 2", description: "The thieves now face their greatest challenge, stealing a priceless artifact from a well-guarded and remote museum. It has unusually strong security, including an armed response team and high tech alarm systems. Plus the thieves encountered the supernatural earlier, so they reasonably expect more occult interference. Planning and executing a flawless heist is easier said than done, but if anyone can pull it off, it’s this team.", url: "http://media.blubrry.com/rpg_actual_play/s/actualplay.roleplayingpublicradio.com/podcasts/RPPR-NBA-Thieves-Code-02.mp3", … }
+  ​​
+  5: Object { title: "Part 3", description: "The thieves have their prize but can they escape with it? The guardian of the museum has trapped them in a small town and has sent her remaining cultists and followers to catch them. Either the thieves must wait until the mystic barrier weakens or they must defeat the dread priestess of Hecate and her followers. Can they survive to cash in or will the cult of Hecate feast on their blood? Find out in the conclusion to this mini-series!", url: "http://media.blubrry.com/rpg_actual_play/s/actualplay.roleplayingpublicradio.com/podcasts/RPPR-NBA-Thieves-Code-03.mp3", … }
+  ​​
+  length: 6
+​​
+​
+link: "https://m42-custompodcast/view/test"
+​
+title: "Updating fields working?"
