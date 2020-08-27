@@ -3,6 +3,7 @@ import './App.css';
 import Header from 'components/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {default as MainPage} from 'components/Pages_MainPage';
+import {default as FeedDetails} from 'components/Pages_DisplayFeed';
 import Footer from 'components/Footer';
 
 // TODO: new logos in /public/logo###.png
@@ -26,10 +27,13 @@ function App() {
               {/* TODO: Page_About Component */}
               <p>About Page</p>
             </div>
-            </Route>
-          <Route path='/'>
-            <MainPage/>
-          </Route>
+        </Route>
+        <Route path="/details/:feedID?">
+          <FeedDetails />
+        </Route>
+        <Route path='/'>
+          <MainPage/>
+        </Route>
         </Switch>
       </main>
       <Footer />
