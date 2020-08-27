@@ -1,8 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import useFetchJson from 'hooks/useFetchJson';
-import {dataEndpoint} from 'constants/apiEndpoints';
+import { dataEndpoint, feedEndpoint } from 'constants/apiEndpoints';
+import { Link } from 'react-router-dom';
 import EpisodeList from 'components/EpisodeList';
+import './Pages_DisplayFeed.css';
+
 
 // TODO: Handle 404 errors.
 
@@ -39,13 +42,17 @@ function Pages_DisplayFeed(props) {
     title,
     description,
     imgUrl,
-    link,
-    doners,
+    // link,
+    // doners,
     items,
   } = feedData;
 
   return(<div className="Pages_DisplayFeed">
-
+    <p className="Pages_DisplayFeed__title">{title}</p>
+    <a className="Pages_DisplayFeed__subscribe" href={feedEndpoint(feedID)}>subscribe</a>
+    <Link className="Pages_DisplayFeed__edit" to={`/edit/${feedID}`} > edit </Link>
+    <p className="Pages_DisplayFeed__description">{description}</p>
+    <img src={imgUrl} alt="" className="Pages_DisplayFeed__image"/>
     <EpisodeList className="Pages_DisplayFeed__EpisodeList" episodes={items} />
   </div>);
 }
