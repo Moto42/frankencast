@@ -1,4 +1,5 @@
 import React from 'react';
+import EpisodeView from './subcomponents/EpisodeView';
 
 /** Displays a list of episodes, giving the details of each.
  *
@@ -16,7 +17,7 @@ import React from 'react';
 function EpisodeList(props) {
   return(<div className={'EpisodeList ' + props.className }>
     {
-      props.episodes.map(e => <p>{e.title}</p>)
+      props.episodes.map(e => <EpisodeView episode={e} />)
     }
   </div>);
 }

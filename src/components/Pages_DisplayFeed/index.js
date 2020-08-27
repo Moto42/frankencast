@@ -43,6 +43,7 @@ function Pages_DisplayFeed(props) {
     description,
     imgUrl,
     // link,
+    // TODO: List the doners
     // doners,
     items,
   } = feedData;
