@@ -11,10 +11,12 @@ import React from 'react';
  * @returns     {ReactElement}
  */
 
+// TODO: Full details of episodes
+
 function EpisodeList(props) {
   return(<div className={'EpisodeList ' + props.className }>
     {
-      props.episodes.map();
+      props.episodes.map(e => <p>{e.title}</p>)
     }
   </div>);
 }
