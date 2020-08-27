@@ -1,0 +1,26 @@
+.Pages_DisplayFeed {
+  display: grid;
+  grid-template-areas:
+    'image       title       title'
+    'image       subscribe   edit'
+    'image description description'
+    'episodes    episodes    episodes';
+}
+.Pages_DisplayFeed__title {
+  grid-area: title;
+}
+.Pages_DisplayFeed__subscribe {
+  grid-area: subscribe;
+}
+.Pages_DisplayFeed__edit {
+  grid-area: edit;
+}
+.Pages_DisplayFeed__description {
+  grid-area: description;
+}
+.Pages_DisplayFeed__image {
+  grid-area: image;
+}
+.Pages_DisplayFeed__EpisodeList {
+  grid-area: episodes;
+}
